@@ -1,0 +1,20 @@
+import { Animal } from "./animal";
+
+class Gato implements Animal{
+    raca:String
+    nome:string
+    idade:number
+
+    constructor (raca:string, nome:string, idade:number){
+        this.raca = raca
+        this.nome = nome
+        this.idade = idade
+    }
+
+    som(): void {
+        console.log("miau miau caralho")
+    }
+}
+
+const cat = new Gato ("branco", "pituco", 1)
+cat.som
